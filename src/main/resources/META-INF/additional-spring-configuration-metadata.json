@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "configuracion.cargarimagenes.ruta",
+  "type": "java.lang.String",
+  "description": "A description for 'configuracion.cargarimagenes.ruta'"
+}]}
