@@ -122,7 +122,7 @@ public class ProductoController {
 			productoEncontrado.setCategoria(producto.getCategoria());
 			return productoService.save(productoEncontrado);
 		}).map(productoGuardado -> {
-			return ResponseEntity.created(URI.create("/api/productos/".concat(producto.getId())))
+			return ResponseEntity.created(URI.create("/api/productos/".concat(productoGuardado.getId())))
 					.body(productoGuardado);
 		}).switchIfEmpty(Mono.just(ResponseEntity.notFound().build()));
 	}
